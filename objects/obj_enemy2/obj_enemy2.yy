@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "spr_explosion_enemy",
-    "path": "sprites/spr_explosion_enemy/spr_explosion_enemy.yy",
+    "name": "spr_enemy2",
+    "path": "sprites/spr_enemy2/spr_enemy2.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_enemy1",
+    "path": "objects/obj_enemy1/obj_enemy1.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -21,10 +24,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +34,7 @@
     "path": "folders/Objects/Enemys.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_explosion_enemy",
+  "name": "obj_enemy2",
   "tags": [],
   "resourceType": "GMObject",
 }
