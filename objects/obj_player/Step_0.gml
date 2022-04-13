@@ -15,3 +15,20 @@ x -= left * move_speed;
 x += right * move_speed;
 
 shooting();
+
+if(keyboard_check_pressed(vk_up) && level_shot < 5) {
+	level_shot++;
+}
+
+if(keyboard_check_pressed(vk_down) && level_shot > 1) {
+	level_shot--;
+}
+
+//velocidade do tiro
+if(keyboard_check_pressed(vk_right) && shooting_timer > 20) {
+	shooting_timer *= 0.9;
+}
+
+if(keyboard_check_pressed(vk_left)) {
+	shooting_timer *= 1.1;
+}

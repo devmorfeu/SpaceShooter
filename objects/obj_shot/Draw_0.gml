@@ -7,7 +7,7 @@ draw_self();
 gpu_set_blendmode(bm_add);
 
 draw_sprite_ext(
-	spr_shine_shot_player, 
+	shine, 
 	image_index, 
 	x, 
 	y, 
