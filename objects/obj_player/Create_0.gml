@@ -67,6 +67,7 @@ shot_level_4 = function() {
 	}
 }
 
+///@method level_up(change)
 level_up = function(number) {
 	
 	if(number >= 90 && level_shot < 5) {

@@ -1,6 +1,8 @@
 /// @description
 event_inherited();
 
+drop_change = 25;
+
 _points = 20;
 
 //variavel de controle do inimigo
