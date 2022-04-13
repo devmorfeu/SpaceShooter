@@ -1,11 +1,14 @@
 /// @description Iniciador do alarm
  
+//randomizando o game
+randomize();
+ 
 //room_speed =  1 segundo
 alarm[0] = room_speed * 5;
 
 //sistema de pontos e level
 player_points = 0;
-next_level = 10;
+next_level = 100;
 level = 1;
 gameover_sequence = noone;
 

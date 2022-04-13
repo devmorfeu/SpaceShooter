@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player",
-    "path": "folders/Objects/Player.yy",
+    "name": "Utility",
+    "path": "folders/Objects/Utility.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_impact",

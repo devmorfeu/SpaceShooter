@@ -19,12 +19,14 @@ shooting_enemy = function() {
 		instance_create_layer(x-3, y + sprite_height / 3,"Shot", obj_shot_enemy1);
 	}
 }
+
+
 ///@method item_drop(chance_de_dropar_item_em_porcentagem)
 item_drop = function(_change) {
 	
 	var value = random(100);
 	
-	if (value < _change) {
+	if (value < _change && y > 96) {
 		instance_create_layer(x, y, "Shot", obj_powerup)
 	}
 }

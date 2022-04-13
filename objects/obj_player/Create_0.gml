@@ -90,7 +90,9 @@ lost_life = function() {
 	
 	if (life > 1){
 		life--;
+		screenshake(3);
 	} else {
 		instance_destroy();
+		screenshake(20);
 	}
 }

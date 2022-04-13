@@ -8,3 +8,5 @@ if(instance_exists(obj_controller)) {
 
 //drop item
 item_drop(drop_change);
+
+screenshake(5);

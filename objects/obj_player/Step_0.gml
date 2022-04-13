@@ -22,6 +22,10 @@ y += down * move_speed;
 x -= left * move_speed;
 x += right * move_speed;
 
+//limitando a posição do player
+x = clamp(x, 64, 1856);
+y = clamp(y, 64, 1024);
+
 shooting();
 
 if(keyboard_check_pressed(vk_up) && level_shot < 5) {
