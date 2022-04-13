@@ -7,6 +7,7 @@ alarm[0] = room_speed * 5;
 player_points = 0;
 next_level = 10;
 level = 1;
+gameover_sequence = noone;
 
 ///@method points_winner(_points)
 points_winner = function(_points) {
@@ -25,7 +26,9 @@ points_winner = function(_points) {
 create_enemy = function() {
 	
 	var enemy = obj_enemy1;
-
+	var xx = irandom_range(64, 1824);
+	//limitando espaçamento dos inimigos por level
+	var yy = irandom_range(-96, -1500 - (level * 800));
 	var change = random_range(0, level);
 
 	if(change > 2) {
@@ -33,6 +36,6 @@ create_enemy = function() {
 	}
 
 	//Criação aleatoria do inimigo
-	instance_create_layer(random_range(64, 1824),random_range(-96, -1500), "Enemy", enemy)
+	instance_create_layer(xx,yy, "Enemy", enemy)
 
 }

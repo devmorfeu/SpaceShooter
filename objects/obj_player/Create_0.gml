@@ -6,6 +6,10 @@ shooting_timer = room_speed / 2;
 
 level_shot = 1;
 
+life = 3;
+
+shields = 3;
+
 shooting = function() {
 	button_fire = keyboard_check(vk_space);
 	if (button_fire && alarm[0] == -1) {
@@ -78,5 +82,15 @@ level_up = function(number) {
 		if (move_speed < 10) {
 			move_speed += .5;
 		}
+	}
+}
+	
+//@method lost_life();
+lost_life = function() {
+	
+	if (life > 1){
+		life--;
+	} else {
+		instance_destroy();
 	}
 }

@@ -1,12 +1,20 @@
 /// @description Movimentação
 
-var up, down, left, right;
+var up, down, left, right, shield;
 //verificando se o usuario pressiona algum dos botoes de movi
 up = keyboard_check(ord("W"));
 down = keyboard_check(ord("S"));
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
+shield = keyboard_check_pressed((ord("E")));
 
+//criação do escudo
+if (shield && shields > 0) {
+	var shield_player = instance_create_layer(x,y,"Shield", obj_shield)
+	shield_player.target = id;
+	
+	shields --;
+}
 
 //movendo o player
 y -= up * move_speed;
