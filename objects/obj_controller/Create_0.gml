@@ -15,10 +15,10 @@ gameover_sequence = noone;
 ///@method points_winner(_points)
 points_winner = function(_points) {
 
-	player_points += _points;
+	player_points += _points * level;
 	
 	if(player_points > next_level) {
-		level += 1;
+		level ++;
 		
 		next_level *= 2;
 	}

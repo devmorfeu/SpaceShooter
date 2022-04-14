@@ -1,3 +1,3 @@
 /// @description
 
-shake = 100;
+shake = 10;
